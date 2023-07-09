@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" >
+    
+  <script src="index.js"></script>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <div >
+ <nav class="main-nav">
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">About us</button>
+      <div id="myDropdown" class="dropdown-content">
+     
+        <a href="first.html">About All </a>
+        <a href="#">Culture Events</a>
+        <a href="#">Hill station</a>
+        <a href="#">Historical place </a>
+        <a href="#">Tample</a>
+        <a href="unity.html">All Destinations</a> 
+      </div>
+     
+          
+              <div class="dropdown">
+               <button class="btn2">INCREDIBLE INDIA</button>
+             
+               <div class="btn1">
+                <button id="btn" ><a href="http://localhost/login/register.php" > Login</a></button></a>
+               </div> 
+            </nav> 
+          
+      </div>
+      <video class="vid" width="1000px" controls  autoplay muted loop>
+        <source src="india.mp4" type="video/mp4">
+      </video>
+      <br>
+      <br>
+      <div>
+        <h1 class="pop">KNOW ABOUT INDIA</h1>
+        <h3 class="pop" >India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress since Independence. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west</div>
+      <div class="slide">
+   
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext"><h1 class="fort">India Pride</h1></div>
+            <img src="diffrent cluture.jpg" style="width:80%">
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext"><h1 class="fort">badrinath Temple</h1></div>
+            <img src="badrinath-temple-uttarakhand.webp" style="width:80%">
+    
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext"><h1 class="fort">Sri Venkateswara Temple</h1></div>
+            <img src="Sri%20Venkateswara%20Temple.webp" style="width:80%">
+            
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"><h1 class="fort">Vrindawan</h1></div>
+            <img src="vrindawan.webp" style="width:80%">
+           
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"><h1 class="fort">Shri padmanabha swamy Temple</h1></div>
+            <img src="shri-padmanabha-swamy-temple-kerala.webp" style="width:80%">
+
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:left">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+      </div>
+
+<div>
+        <h1 class="pop">Explore Before You Visit</h1>
+        <h3 class="pop">Dive deeper into India's rich culture and heritage</h3>
+        <div class="grid">
+          <div class="grid1"> 
+            <img src="khajurao.jpg" width="350px" height="200px">
+            <h1 class="head"> Khajuraho</h1>
+            <p>Khajuraho is an ancient city known for magnificent temples and its intricate sculptures located in the Chhatarpur district of Madhya Pradesh. </p>
+            <a href="#" class="head1"><a href="https://whc.unesco.org/en/list/240/"> Read more </a></a>
+        </div>
+        <div class="grid1"> 
+          <img src="ajanta.jpg" width="350px" height="200px">
+          <h1 cla      ss="head">Ajanta Caves</h1>
+          <p>The Ajanta Caves are approximately 30 rock-cut Buddhist cave monuments dating from the 2nd century BCE to about 480 CE in the Aurangabad district of Maharashtra </p>
+          <a href="https://travelwithsmiley1.blogspot.com/2023/03/ajanta-caves.html" class="head1">Read more</a>
+      </div>
+
+        <div class="grid1"> 
+                 <img src="tajmahal.jpg" width="350px" height="200px">
+                 <h1 class="head">Taj Mahal</h1>
+                 <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal </p>
+                 <a href="https://travelwithsmiley1.blogspot.com/2023/03/taj-mahal.html" class="head1">Read more</a>
+             </div>   
+             </div>
+      </div>
+      <br>
+     
+      <div class="btn1" id="btn10">
+       <button id="btn" ><a href ="index4.html"> View All</a></button>
+      </div> 
+           <br>
+      <br>
+ 
+     
+  
+</body>
+</html>
